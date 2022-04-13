@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="336.0" prefWidth="542.0">
+            <children>
+                <TextField fx:id="numberfield" layoutX="221.0" layoutY="126.0" prefHeight="25.0" prefWidth="159.0" />
+                <Button fx:id="canclebtn" layoutX="221.0" layoutY="248.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="68.0" text="Отмена" />
+                <Button fx:id="enterbtn" layoutX="309.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Вход" />
+                <Label layoutX="163.0" layoutY="130.0" prefHeight="17.0" prefWidth="58.0" text="Номер" />
+                <Label layoutX="163.0" layoutY="160.0" prefHeight="17.0" prefWidth="58.0" text="Пароль" />
+                <ImageView fitHeight="109.0" fitWidth="152.0" layoutX="412.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.jpg" />
+               </image>
+                </ImageView>
+            <TextField fx:id="codefield" editable="false" layoutX="221.0" layoutY="186.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="163.0" layoutY="190.0" prefHeight="17.0" prefWidth="49.0" text="Код" />
+            <Label layoutX="40.0" layoutY="38.0" prefHeight="39.0" prefWidth="252.0" text="Телеком Нева Связь">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordfield" layoutX="221.0" layoutY="156.0" prefHeight="25.0" prefWidth="159.0" />
+            <Label fx:id="codepic" layoutX="351.0" layoutY="190.0" prefHeight="20.0" prefWidth="123.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            </children></Pane>
+    </children>
+</GridPane>
