@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlStatus">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="336.0" prefWidth="542.0">
+            <children>
+                <Button fx:id="addbtn" layoutX="175.0" layoutY="297.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="87.0" text="Add" />
+                <Button fx:id="canclebtn" layoutX="280.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Cancle" />
+                <Label alignment="CENTER" layoutX="293.0" layoutY="31.0" prefHeight="35.0" prefWidth="249.0" text="Контроль состояния" textAlignment="JUSTIFY">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="ControlStatusTable" layoutX="12.0" layoutY="89.0" prefHeight="200.0" prefWidth="518.0">
+                    <columns>
+                        <TableColumn fx:id="SerNomer" prefWidth="94.0" text="Серийный номер" />
+                        <TableColumn fx:id="Nazvanie" prefWidth="146.0" text="Название" />
+                        <TableColumn fx:id="Keficient" minWidth="9.0" prefWidth="71.0" text="Коэффициент затухания" />
+                        <TableColumn fx:id="Tehnologia" prefWidth="70.0" text="Технология передачи данных" />
+                        <TableColumn fx:id="Raspolojenie" prefWidth="136.0" text="Расположение" />
+                    </columns>
+                </TableView>
+            <Button fx:id="MagSeti" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#initialize" prefHeight="42.0" prefWidth="102.0" text="Магестральные сети" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="CetiDost" layoutX="123.0" layoutY="27.0" mnemonicParsing="false" onAction="#initialize" prefHeight="42.0" prefWidth="87.0" text="Сети доступа" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="Abonent" layoutX="219.0" layoutY="27.0" mnemonicParsing="false" onAction="#initialize" prefHeight="42.0" prefWidth="66.0" text="Абонент" />
+            <TableView fx:id="ControlStatusTable2" layoutX="12.0" layoutY="89.0" prefHeight="200.0" prefWidth="518.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="SerNomer2" prefWidth="121.0" text="Серийный номер" />
+                  <TableColumn fx:id="Naimenovanie" prefWidth="133.0" text="Наименование" />
+                  <TableColumn fx:id="Kolvo" minWidth="9.0" prefWidth="71.0" text="Количество портов" />
+                  <TableColumn fx:id="Standart" prefWidth="121.0" text="Стандарт передачи данных" />
+                  <TableColumn fx:id="Chastota" prefWidth="78.0" text="Частота" />
+                  <TableColumn fx:id="Interf" prefWidth="74.0" text="Интерфейсы" />
+                  <TableColumn fx:id="Skorost" prefWidth="71.0" text="Скорость передачи данных" />
+                  <TableColumn fx:id="MestoRaspol" prefWidth="151.0" text="Место расположения" />
+               </columns>
+            </TableView>
+            <TableView fx:id="ControlStatusTable3" layoutX="12.0" layoutY="89.0" prefHeight="200.0" prefWidth="518.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="SerNomer3" prefWidth="121.0" text="Серийный номер" />
+                  <TableColumn fx:id="Naimenovanie3" prefWidth="133.0" text="Наименование" />
+                  <TableColumn fx:id="Porti" minWidth="9.0" prefWidth="71.0" text="Порты" />
+                  <TableColumn fx:id="StandartPered" prefWidth="121.0" text="Стандарт передачи" />
+                  <TableColumn fx:id="Skorost3" prefWidth="78.0" text="Скорость" />
+                  <TableColumn fx:id="AdressAbon" prefWidth="158.0" text="Адресс абонента" />
+               </columns>
+            </TableView>
+            </children></Pane>
+    </children>
+</GridPane>

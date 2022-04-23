@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdmWindow">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="456.0" prefWidth="670.0">
+            <children>
+                <TableView fx:id="abonentsTable" layoutX="109.0" layoutY="182.0" prefHeight="200.0" prefWidth="391.0">
+                    <columns>
+                        <TableColumn fx:id="Name" prefWidth="94.0" text="ФИО" />
+                        <TableColumn fx:id="LastName" prefWidth="146.0" text="Абонентский номер" />
+                        <TableColumn fx:id="Age" minWidth="9.0" prefWidth="121.0" text="Лицевой счет" />
+                        <TableColumn fx:id="UserRole" prefWidth="30.0" text="Услуги" />
+                  <TableColumn fx:id="EmailAddress" prefWidth="62.0" text="Номер договора" />
+                    </columns>
+                </TableView>
+                <ComboBox fx:id="FIOmenu" layoutX="394.0" layoutY="61.0" prefHeight="0.0" prefWidth="157.0" promptText="ФИО пользователя" />
+            <Button fx:id="exitAdm1" layoutX="10.0" layoutY="73.0" mnemonicParsing="false" text="Логотип ТНС" />
+            <Button fx:id="btnAbonent" layoutX="17.0" layoutY="108.0" mnemonicParsing="false" text="Абоненты" />
+            <RadioButton fx:id="activebtn" layoutX="109.0" layoutY="408.0" mnemonicParsing="false" text="Активные" />
+            <RadioButton fx:id="nonactivebtn" layoutX="195.0" layoutY="408.0" mnemonicParsing="false" text="Неактивные" />
+            <Label layoutX="137.0" layoutY="69.0" text="Абоненты ТНС">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="workersPic" fitHeight="57.0" fitWidth="87.0" layoutX="578.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@defolt.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="actionstable" layoutX="499.0" layoutY="108.0" prefHeight="341.0" prefWidth="157.0">
+              <columns>
+                <TableColumn fx:id="Action" prefWidth="156.0" text="События" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnUprav" layoutX="1.0" layoutY="139.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="105.0" text="Управление оборудованием" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="btnAktivi" layoutX="25.0" layoutY="189.0" mnemonicParsing="false" text="Активы" />
+            <Button fx:id="btnBilling" layoutX="23.0" layoutY="223.0" mnemonicParsing="false" text="Биллинг" />
+            <Button fx:id="btnSupUs" layoutX="4.0" layoutY="257.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="102.0" text="Поддержка пользователей" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="CRMbtn" layoutX="32.0" layoutY="311.0" mnemonicParsing="false" text="CRM" />
+            <Button layoutX="35.0" layoutY="358.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="36.0" style="-fx-border-radius: 30; -fx-background-radius: 30;" text="проф">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="35.0" layoutY="399.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="36.0" style="-fx-border-radius: 30; -fx-background-radius: 30;" text="?">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            </children></Pane>
+    </children>
+</GridPane>
